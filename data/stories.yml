@@ -1,0 +1,58 @@
+version: "2.0"
+
+stories:
+  - story: tu_van_sim
+    steps:
+      - intent: basic.chao_hoi
+      - action: utter_chao_hoi
+      - intent: hotro.sim
+      - action: utter_hotro_sim
+
+  - story: tu_van_internet
+    steps:
+      - intent: basic.chao_hoi
+      - action: utter_chao_hoi
+      - intent: hotro.internet
+      - action: utter_hotro_internet
+
+  - story: tu_van_max100
+    steps:
+      - intent: hotro.sim.max100
+      - action: utter_sim_max100
+      - intent: basic.ok
+      - action: utter_ok
+
+  - story: tu_van_d30s
+    steps:
+      - intent: hotro.sim.d30s
+      - action: utter_sim_d30s
+      - intent: basic.ok
+      - action: utter_ok
+
+  - story: tu_van_d60s
+    steps:
+      - intent: hotro.sim.d60s
+      - action: utter_sim_d60s
+      - intent: basic.ok
+      - action: utter_ok
+
+  - story: tu_van_home1
+    steps:
+      - intent: hotro.internet.home1
+      - action: utter_internet_home1
+      - intent: basic.ok
+      - action: utter_ok
+
+  - story: tu_van_home2
+    steps:
+      - intent: hotro.internet.home2
+      - action: utter_internet_home2
+      - intent: basic.ok
+      - action: utter_ok
+
+  - story: tu_van_home3
+    steps:
+      - intent: hotro.internet.home3
+      - action: utter_internet_home3
+      - intent: basic.ok
+      - action: utter_ok

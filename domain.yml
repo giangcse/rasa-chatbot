@@ -1,0 +1,84 @@
+version: "2.0"
+
+intents:
+  - basic.chao_hoi
+  - basic.tam_biet
+  - basic.cam_on
+  - basic.ho_tro
+  - basic.ok
+  - hotro.sim
+  - hotro.internet
+
+entities:
+  - d30s
+  - d60s
+  - home1
+  - home2
+  - home3
+  - internet
+  - max100
+  - sim
+
+responses:
+  utter_chao_hoi:
+    - text: "Kính chào quý khách, bên em hiện đang cung cấp 2 dịch vụ là 4G và Internet. Quý khách vui lòng chọn dịch vụ cần tư vấn."
+
+  utter_tam_biet:
+    - text: "Kính chào tạm biệt quý khách!"
+
+  utter_cam_on:
+    - text: "Dạ cảm ơn quý khách!"
+
+  utter_ok:
+    - text: "Ok mày luôn!"
+
+  utter_ho_tro:
+    - text: "Quý khách cần hỗ trợ vấn đề về sim 4G hay Internet ạ?"
+
+  utter_hotro_sim:
+    - text: "Đối với dịch vụ sim 4G bên em hiện đang có 3 gói cước cơ bản là MAX100, D30S, D60S. Quý khách vui lòng chọn gói cước để được tư vấn."
+
+  utter_sim_max100:
+    - text: "Đối với gói Max 100 quý khách có 30GB tốc độ cao/30 ngày (Không giới hạn truy cập tốc độ thường). Giá cước 100.000đ/tháng."
+
+  utter_sim_d30s:
+    - text: "Gói D30S:
+        - 1500 phút gọi di động nội mạng Vinaphone.
+        - 30 phút di động ngoại mạng.
+        - 1GB data/ngày.
+        - 6 chu kỳ, mỗi chu kỳ 30 ngày.
+        - Giá cước: 310.000đ/lượt."
+
+  utter_sim_d60s:
+    - text: "Gói D60S:
+        - Giá tiết kiệm 30%.
+        - 1500 phút gọi di động nội mạng VinaPhone.
+        - 50 phút ngoại mạng.
+        - 2GB data/ngày.
+        - 6 chu kỳ, mỗi chu kỳ 30 ngày.
+        - Giá cước: 420.000đ/tháng."
+
+  utter_hotro_internet:
+    - text: "Đối với dịch vụ Internet bên em hiện đang có 3 gói cước cơ bản là Home 1, Home 2, Home 3. Quý khách vui lòng chọn gói cước để được tư vấn."
+
+  utter_internet_home1:
+    - text: "Gói Home 1:
+        - Đường truyền Internet siêu tốc 40Mbps.
+        - Miễn Phí modem Wifi.
+        - Giá cước: từ 165.000đ/tháng."
+
+  utter_internet_home2:
+    - text: "Gói Home 2:
+        - Đường truyền Internet siêu tốc 80Mbps.
+        - Miễn Phí modem Wifi.
+        - Giá cước: từ 180.000đ/tháng."
+
+  utter_internet_home3:
+    - text: "Gói Home 3:
+        - Đường truyền Internet siêu tốc 100Mbps.
+        - Miễn Phí modem Wifi.
+        - Giá cước: từ 195.000đ/tháng."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

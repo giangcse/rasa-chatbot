@@ -1,0 +1,343 @@
+version: "2.0"
+
+nlu:
+  - intent: basic.chao_hoi
+    examples: |
+      - hey
+      - hello
+      - hi
+      - chào
+      - chào bạn
+      - chào anh
+      - chào em
+      - ê
+      - ê cu
+      - xin chào
+      - kính chào
+      - bạn ơi
+      - em ơi
+      - anh ơi
+      - chị ơi
+
+  - intent: basic.tam_biet
+    examples: |
+      - tạm biệt
+      - bái bai
+      - bai
+      - pipi
+      - pjpj
+      - goodbye
+      - bye
+      - bye bye
+      - bye nha
+
+  - intent: basic.cam_on
+    examples: |
+      - cảm ơn nghe
+      - cám ơn nghe
+      - cảm mơn nha
+      - cảm ơn
+      - cám ơn
+      - mơn nha
+      - thanks
+      - thks
+      - tks
+      - thankyou
+      - thank you
+
+  - intent: basic.ho_tro
+    examples: |
+      - tôi cần giúp đỡ
+      - cho tôi hỏi
+      - tôi muốn biết
+      - giúp tôi với
+      - cho tôi biết
+      - cho tôi hỏi thăm
+
+  - intent: basic.ok
+    examples: |
+      - ok
+      - được
+      - oki
+      - okie
+      - ừm
+      - ừa
+      - uk
+      - uhm
+      - ohm
+      - ờm
+
+  - intent: hotro.sim.d30s
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [30](d30s)
+        metadata:
+          canonical: true
+      - text: |
+          [30s](d30s)
+        metadata:
+          canonical: true
+      - text: |
+          [D30s](d30s)
+      - text: |
+          Gói [D30S](d30s)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [d30s](d30s)
+        metadata:
+          canonical: true
+      - text: |
+          [d30](d30s)
+        metadata:
+          canonical: true
+      - text: |
+          gói [D30s](d30s)
+        metadata:
+          canonical: true
+  - intent: hotro.sim.d60s
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [60](d60s)
+        metadata:
+          canonical: true
+      - text: |
+          [60s](d60s)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [D60S](d60s)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [d60s](d60s)
+      - text: |
+          [d60](d60s)
+        metadata:
+          canonical: true
+      - text: |
+          gói [d60s](d60s)
+        metadata:
+          canonical: true
+  - intent: hotro.internet
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          Gói [Internet](internet)
+        metadata:
+          canonical: true
+      - text: |
+          Tôi muốn tư vấn về [internet](internet)
+      - text: |
+          dô [mạng](internet)
+      - text: |
+          gói [internet](internet)
+      - text: |
+          kéo [mạng](internet)
+        metadata:
+          canonical: true
+      - text: |
+          kéo [wifi](internet)
+        metadata:
+          canonical: true
+      - text: |
+          kéo [wifi](internet) á
+      - text: |
+          tư vấn [internet](internet)
+        metadata:
+          canonical: true
+  # - intent: help.khac
+  #   metadata:
+  #     language: vi
+  #   examples:
+  #     - text: |
+  #         Còn gói nào không
+  #     - text: |
+  #         Còn nữa không
+  #     - text: |
+  #         Gói khác
+  #     - text: |
+  #         Gói khác nữa
+  #     - text: |
+  #         Khoan
+  #     - text: |
+  #         Thêm nữa
+  #     - text: |
+  #         Vậy cái khác
+  #     - text: |
+  #         Vậy còn gói khác
+  #       metadata:
+  #         canonical: true
+  #     - text: |
+  #         Vậy còn gói nào khác không
+  #     - text: |
+  #         Vậy gói khác
+  #     - text: |
+  #         còn cái khác
+  #     - text: |
+  #         gói khác
+  #     - text: |
+  #         gói nào nữa không
+  - intent: hotro.sim.max100
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [100](max100)
+        metadata:
+          canonical: true
+      - text: |
+          [100k](max100)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [Max100](max100)
+      - text: |
+          gói [max](max100)
+        metadata:
+          canonical: true
+      - text: |
+          gói [max100](max100)
+        metadata:
+          canonical: true
+      - text: |
+          [max](max100)
+      - text: |
+          [max100](max100)
+  - intent: hotro.sim
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [4g](sim)
+      - text: |
+          Dạ [4g](sim)
+      - text: |
+          Gói cước [4G](sim)
+        metadata:
+          canonical: true
+      - text: |
+          Hỗ trợ [4g](sim)
+      - text: |
+          Hỗ trợ mạng [4g](sim)
+      - text: |
+          Tôi cần hỗ trợ về [4g](sim)
+        metadata:
+          canonical: true
+      - text: |
+          Tôi cần hỗ trợ về mạng [di động](sim)
+      - text: |
+          Tôi cần hỗ trợ về [sim](sim)
+        metadata:
+          canonical: true
+      - text: |
+          Tôi cần hỗ trợ về truy cập internet [di động](sim)
+      - text: |
+          Tư vấn cho tôi về [4g](sim)
+      - text: |
+          dữ liệu [di động](sim)
+        metadata:
+          canonical: true
+      - text: |
+          hỗ trợ [sim](sim)
+      - text: |
+          hỗ trợ [sim](sim) [4g](sim)
+        metadata:
+          canonical: true
+      - text: |
+          mạng [di động](sim)
+      - text: |
+          [sim](sim)
+      - text: |
+          tôi cần biết về [4g](sim)
+  - intent: hotro.internet.home1
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          Gói [Home 1](home1)
+      - text: |
+          [Home 1](home1)
+      - text: |
+          Tư vấn gói [Home 1](home1)
+        metadata:
+          canonical: true
+      - text: |
+          gói [165k](home1)
+        metadata:
+          canonical: true
+      - text: |
+          gói cước [165000](home1)
+        metadata:
+          canonical: true
+      - text: |
+          [hom1](home1)
+      - text: |
+          [home 1](home1)
+      - text: |
+          [home1](home1)
+      - text: |
+          muốn biêt về gói [home1](home1)
+        metadata:
+          canonical: true
+      - text: |
+          muốn hỏi về gói [home 1](home1)
+        metadata:
+          canonical: true
+  - intent: hotro.internet.home2
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          Gói [Home 2](home2)
+      - text: |
+          Gói [home2](home2)
+        metadata:
+          canonical: true
+      - text: |
+          [Home 2](home2)
+        metadata:
+          canonical: true
+      - text: |
+          Tư vấn gói [home 2](home2)
+        metadata:
+          canonical: true
+      - text: |
+          [hom2](home2)
+        metadata:
+          canonical: true
+      - text: |
+          [home](home2)
+        metadata:
+          canonical: true
+      - text: |
+          [home 2](home2)
+  - intent: hotro.internet.home3
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [HOme 3](home3)
+        metadata:
+          canonical: true
+      - text: |
+          [Home 3](home3)
+        metadata:
+          canonical: true
+      - text: |
+          Tư vấn gói [home 3](home3)
+      - text: |
+          gói [home 3](home3)
+        metadata:
+          canonical: true
+      - text: |
+          [hom3](home1)
+      - text: |
+          [home3](home3)
+        metadata:
+          canonical: true
