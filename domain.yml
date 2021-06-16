@@ -20,6 +20,9 @@ entities:
   - sim
 
 responses:
+  utter_default:
+    - text: "Hiện tại bot chưa hỗ trợ vấn đề này, mong quý khách thông cảm."
+
   utter_chao_hoi:
     - text: "Kính chào quý khách, bên em hiện đang cung cấp 2 dịch vụ là 4G và Internet. Quý khách vui lòng chọn dịch vụ cần tư vấn."
 
@@ -59,7 +62,7 @@ responses:
         - Giá cước: 420.000đ/tháng."
 
   utter_hotro_internet:
-    - text: "Đối với dịch vụ Internet bên em hiện đang có 3 gói cước cơ bản là Home 1, Home 2, Home 3. Quý khách vui lòng chọn gói cước để được tư vấn."
+    - text: "Đối với dịch vụ Internet bên em hiện đang có 3 gói cước cơ bản là Home1, Home2, Home3. Quý khách vui lòng chọn gói cước để được tư vấn."
 
   utter_internet_home1:
     - text: "Gói Home 1:
@@ -78,6 +81,12 @@ responses:
         - Đường truyền Internet siêu tốc 100Mbps.
         - Miễn Phí modem Wifi.
         - Giá cước: từ 195.000đ/tháng."
+
+  utter_chui_nhau_1:
+    - text: "Tao đập chết mịe mày giờ!"
+
+  utter_chui_nhau_2:
+    - text: "Ngon mày nói tiếng nữa coi"
 
 session_config:
   session_expiration_time: 60

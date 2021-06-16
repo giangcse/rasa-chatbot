@@ -67,6 +67,26 @@ nlu:
       - ohm
       - ờm
 
+  - intent: basic.chui_nhau
+    examples: |
+      - chửi nhau hông
+      - chửi lộn hông
+      - đánh lộn hông
+      - đánh nhau hông
+      - đập
+      - đá
+      - đấm
+
+  - intent: basic.noi_bay
+    examples: |
+      - cằk
+      - cc
+      - cl
+      - đm
+      - dmm
+      - djt
+      - lol
+
   - intent: hotro.sim.d30s
     metadata:
       language: vi
@@ -278,7 +298,7 @@ nlu:
       - text: |
           [hom1](home1)
       - text: |
-          [home 1](home1)
+          home [1](home1)
       - text: |
           [home1](home1)
       - text: |
@@ -286,7 +306,7 @@ nlu:
         metadata:
           canonical: true
       - text: |
-          muốn hỏi về gói [home 1](home1)
+          muốn hỏi về gói home [1](home1)
         metadata:
           canonical: true
   - intent: hotro.internet.home2
@@ -294,17 +314,17 @@ nlu:
       language: vi
     examples:
       - text: |
-          Gói [Home 2](home2)
+          Gói Home [2](home2)
       - text: |
           Gói [home2](home2)
         metadata:
           canonical: true
       - text: |
-          [Home 2](home2)
+          Home [2](home2)
         metadata:
           canonical: true
       - text: |
-          Tư vấn gói [home 2](home2)
+          Tư vấn gói home [2](home2)
         metadata:
           canonical: true
       - text: |
@@ -312,27 +332,19 @@ nlu:
         metadata:
           canonical: true
       - text: |
-          [home](home2)
-        metadata:
-          canonical: true
-      - text: |
-          [home 2](home2)
+          home [2](home2)
   - intent: hotro.internet.home3
     metadata:
       language: vi
     examples:
       - text: |
-          [HOme 3](home3)
+          Home [3](home3)
         metadata:
           canonical: true
       - text: |
-          [Home 3](home3)
-        metadata:
-          canonical: true
+          Tư vấn gói home [3](home3)
       - text: |
-          Tư vấn gói [home 3](home3)
-      - text: |
-          gói [home 3](home3)
+          gói home [3](home3)
         metadata:
           canonical: true
       - text: |

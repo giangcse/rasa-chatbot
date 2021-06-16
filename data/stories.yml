@@ -56,3 +56,12 @@ stories:
       - action: utter_internet_home3
       - intent: basic.ok
       - action: utter_ok
+
+  - story: chui_nhau
+    steps:
+      - intent: basic.noi_bay
+      - action: utter_chui_nhau_1
+      - intent: basic.chui_nhau
+      - action: utter_chui_nhau_2
+      - intent: basic.ok
+      - action: utter_ok
