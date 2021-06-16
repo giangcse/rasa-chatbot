@@ -175,7 +175,7 @@ class Zalo():
             print("Connection Error!")
 
 if __name__ == "__main__":
-    token = str("dGDnKxTiWacN0d5Rl6g6JPO3Sr-vSSiexabfJgHTq5ZsRcOPWctVRRTVI3YORiTVzsreBBzWssB2K3TviaQ2RTalCWY0Hv5_u7Pd9PHIaaZuI3qraK6EKSemEoAw5ezBbHuwFiS1f7Qd3bnvwGlVCwjkPsZALSepwcjWGA0QsGpG7653dGl69DyMCsFq6i4ctIDgSgWUuIR-TqvGe6EvF-v934kdPxWcx48tOSDRWWAhSYLeXqsTPzvJAngrIDX_mNzoA-jdqM_BUbjuiaNx4lLqULZQMiqWTHXSmIAsSO57")
+    token = str("")
     zalo = Zalo()
     while True:
         zalo.bot_reply(token)
