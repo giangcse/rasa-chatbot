@@ -81,7 +81,7 @@ nlu:
       - đăng ký dịch vụ
       - sử dụng dịch vụ
 
-  - intent: hotro.fibervnn
+  - intent: hotro.fiber
     metadata:
       language: vi
     examples:

@@ -4,20 +4,27 @@ intents:
   - basic.chao_hoi
   - basic.tam_biet
   - basic.cam_on
+  - basic.dang_ky
   - basic.ho_tro
-  - basic.ok
-  - hotro.sim
-  - hotro.internet
+  - basic.didong
+  - hotro.fiber
+  - hotro.mytv
+  - hotro.didong
+  - hotro.bhxh
+  - hotro.chukyso
+  - hotro.hddt
+  - hotro.pharmacy
+  - hotro.khac
 
 entities:
-  - d30s
-  - d60s
-  - home1
-  - home2
-  - home3
-  - internet
-  - max100
-  - sim
+  - fiber
+  - didong
+  - mytv
+  - chukyso
+  - hddt
+  - bhxh
+  - pharmacy
+  - khac
 
 responses:
   utter_default:
@@ -37,6 +44,16 @@ responses:
 
   utter_ho_tro:
     - text: "Quý khách vui lòng chọn dịch vụ cần hỗ trợ:
+        - Internet
+        - Vinaphone
+        - MyTV
+        - Chữ ký số (VNPT-CA)
+        - Bảo hiểm xã hội (BHXH-IVAN)
+        - Hóa đơn điện tử
+        - Hệ thống quản lý nhà thuốc (VNPT-Pharmacy)"
+
+  utter_dang_ky:
+    - text: "Quý khách vui lòng chọn dịch vụ cần đăng ký:
         - Internet
         - Vinaphone
         - MyTV
