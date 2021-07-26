@@ -53,6 +53,10 @@ nlu:
       - giúp tôi với
       - cho tôi biết
       - cho tôi hỏi thăm
+      - hỗ trợ
+      - hỏi
+      - giúp
+      - tìm hiểu
 
   - intent: basic.ok
     examples: |
@@ -67,289 +71,306 @@ nlu:
       - ohm
       - ờm
 
-  - intent: basic.chui_nhau
+  - intent: basic.dang_ky
     examples: |
-      - chửi nhau hông
-      - chửi lộn hông
-      - đánh lộn hông
-      - đánh nhau hông
-      - đập
-      - đá
-      - đấm
+      - đăng ký
+      - muốn đăng ký
+      - muốn sử dụng
+      - muốn đăng ký sử dụng
+      - sử dụng
+      - đăng ký dịch vụ
+      - sử dụng dịch vụ
 
-  - intent: basic.noi_bay
-    examples: |
-      - cằk
-      - cc
-      - cl
-      - đm
-      - dmm
-      - djt
-      - lol
+  - intent: hotro.fibervnn
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [fiber](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          [wifi](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          [internet](fiber)
+      - text: |
+          kéo [wifi](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          vào [mạng](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          kéo [internet](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          gói [cáp quang](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          kéo [cáp quang](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          gói [cáp quang](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          gói [wifi](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          gói [internet](fiber)
+        metadata:
+          canonical: true
+      - text: |
+          gói [mạng](fiber)
+        metadata:
+          canonical: true
+  - intent: hotro.mytv
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          [mytv](mytv)
+        metadata:
+          canonical: true
+      - text: |
+          [tv](mytv)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [mytv](mytv)
+        metadata:
+          canonical: true
+      - text: |
+          Gói [tv](mytv)
+      - text: |
+          [truyền hình](mytv)
+        metadata:
+          canonical: true
+      - text: |
+          gói [truyền hình](mytv)
+        metadata:
+          canonical: true
+      - text: |
+          gói [truyền hình] cáp(fiber)
+        metadata:
+          canonical: true
+  - intent: hotro.bhxh
+    metadata:
+      language: vi
+    examples:
+      - text: |
+          Gói [bảo hiểm](bhxh)
+        metadata:
+          canonical: true
+      - text: |
+          Tôi muốn tư vấn về [bảo hiểm xã hội](bhxh)
+      - text: |
+          sử dụng [bhxh](bhxh)
+      - text: |
+          dịch vụ [ivan](bhxh)
+      - text: |
+          dịch vụ [bảo hiểm](bhxh)
+        metadata:
+          canonical: true
+      - text: |
+          [bảo hiểm xã hôi](bhxh)
+        metadata:
+          canonical: true
+      - text: |
+          đăng ký dịch vụ [ivan](bhxh)
+      - text: |
+          đăng ký [bảo hiểm xã hội](bhxh)
+        metadata:
+          canonical: true
+      - text: |
+          dịch vụ [bảo hiểm xã hội](bhxh)
+        metadata:
+          canonical: true
 
-  - intent: hotro.sim.d30s
+  - intent: hotro.chukyso
     metadata:
       language: vi
     examples:
       - text: |
-          [30](d30s)
+          [ca](chukyso)
         metadata:
           canonical: true
       - text: |
-          [30s](d30s)
+          [chữ ký số](chukyso)
         metadata:
           canonical: true
       - text: |
-          [D30s](d30s)
+          Mua [chữ ký](chukyso)
       - text: |
-          Gói [D30S](d30s)
+          Sử dụng [chữ ký số](chukyso)
         metadata:
           canonical: true
       - text: |
-          Gói [d30s](d30s)
+          đăng ký [chữ ký số](chukyso)
         metadata:
           canonical: true
       - text: |
-          [d30](d30s)
+          [chứng thực số](chukyso)
+      - text: |
+          [chứng thực](chukyso)
+      - text: |
+          gói [chữ ký số](chukyso)
         metadata:
           canonical: true
       - text: |
-          gói [D30s](d30s)
+          thuê [chữ ký số](chukyso)
         metadata:
           canonical: true
-  - intent: hotro.sim.d60s
+      - text: |
+          tôi muốn sử dụng [chữ ký số](chukyso)
+        metadata:
+          canonical: true
+
+  - intent: hotro.didong
     metadata:
       language: vi
     examples:
       - text: |
-          [60](d60s)
+          [4g](didong)
+      - text: |
+          Dạ [4g](didong)
+      - text: |
+          Gói cước [4G](didong)
         metadata:
           canonical: true
       - text: |
-          [60s](d60s)
+          Hỗ trợ [4g](didong)
+      - text: |
+          Hỗ trợ mạng [4g](didong)
+      - text: |
+          Tôi cần hỗ trợ về [4g](didong)
         metadata:
           canonical: true
       - text: |
-          Gói [D60S](d60s)
+          Tôi cần hỗ trợ về mạng [di động](didong)
+      - text: |
+          Tôi cần hỗ trợ về [sim](didong)
         metadata:
           canonical: true
       - text: |
-          Gói [d60s](d60s)
+          Tôi cần hỗ trợ về truy cập internet [di động](didong)
       - text: |
-          [d60](d60s)
+          Tư vấn cho tôi về [4g](didong)
+      - text: |
+          dữ liệu [di động](didong)
         metadata:
           canonical: true
       - text: |
-          gói [d60s](d60s)
+          hỗ trợ [sim](didong)
+      - text: |
+          hỗ trợ [sim](didong) [4g](didong)
         metadata:
           canonical: true
-  - intent: hotro.internet
+      - text: |
+          mạng [di động](didong)
+      - text: |
+          [sim](didong)
+      - text: |
+          tôi cần biết về [4g](didong)
+  - intent: hotro.hddt
     metadata:
       language: vi
     examples:
       - text: |
-          Gói [Internet](internet)
+          sử dụng [hóa đơn điện tử](hddt)
+      - text: |
+          [hóa đơn](hddt)
+      - text: |
+          Tư vấn [hóa đơn](hddt)
         metadata:
           canonical: true
       - text: |
-          Tôi muốn tư vấn về [internet](internet)
-      - text: |
-          dô [mạng](internet)
-      - text: |
-          gói [internet](internet)
-      - text: |
-          kéo [mạng](internet)
+          dịch vụ [hóa đơn](hddt)
         metadata:
           canonical: true
       - text: |
-          kéo [wifi](internet)
+          dịch vu [hóa đơn điện tử](hddt)
         metadata:
           canonical: true
       - text: |
-          kéo [wifi](internet) á
+          [hddt](hddt)
       - text: |
-          tư vấn [internet](internet)
+          [hđđt](hddt)
+      - text: |
+          [hoa don](hddt)
+      - text: |
+          muốn biêt về [hóa đơn điện tử](hddt)
         metadata:
           canonical: true
-  # - intent: help.khac
-  #   metadata:
-  #     language: vi
-  #   examples:
-  #     - text: |
-  #         Còn gói nào không
-  #     - text: |
-  #         Còn nữa không
-  #     - text: |
-  #         Gói khác
-  #     - text: |
-  #         Gói khác nữa
-  #     - text: |
-  #         Khoan
-  #     - text: |
-  #         Thêm nữa
-  #     - text: |
-  #         Vậy cái khác
-  #     - text: |
-  #         Vậy còn gói khác
-  #       metadata:
-  #         canonical: true
-  #     - text: |
-  #         Vậy còn gói nào khác không
-  #     - text: |
-  #         Vậy gói khác
-  #     - text: |
-  #         còn cái khác
-  #     - text: |
-  #         gói khác
-  #     - text: |
-  #         gói nào nữa không
-  - intent: hotro.sim.max100
+      - text: |
+          tu van ve [hoa don dien tu](hddt)
+        metadata:
+          canonical: true
+      - text: |
+          đăng ký [hóa đơn điện tử](hddt)
+        metadata:
+          canonical: true
+
+  - intent: hotro.pharmacy
     metadata:
       language: vi
     examples:
       - text: |
-          [100](max100)
+          dịch vụ [pharmacy](pharmacy)
+      - text: |
+          dịch vụ [y tế](pharmacy)
         metadata:
           canonical: true
       - text: |
-          [100k](max100)
+          dịch vụ [nhà thuốc](pharmacy)
         metadata:
           canonical: true
       - text: |
-          Gói [Max100](max100)
-      - text: |
-          gói [max](max100)
+          Tư vấn dịch vụ [y tế](pharmacy)
         metadata:
           canonical: true
       - text: |
-          gói [max100](max100)
+          [pharmacy](pharmacy)
         metadata:
           canonical: true
       - text: |
-          [max](max100)
+          đăng ký [pharmacy](pharmacy)
       - text: |
-          [max100](max100)
-  - intent: hotro.sim
+          đăng ký [nhà thuốc](pharmacy)
+      - text: |
+          đăng ký dịch vụ dành cho [nhà thuốc](pharmacy)
+      - text: |
+          sử dụng dịch vụ dành cho [y tế](pharmacy)
+      - text: |
+          sử dụng dịch vụ dành cho [nhà thuốc](pharmacy)
+        metadata:
+          canonical: true
+      - text: |
+          dịch vụ dành cho [nhà thuốc](pharmacy)
+        metadata:
+          canonical: true
+  - intent: hotro.khac
     metadata:
       language: vi
     examples:
       - text: |
-          [4g](sim)
-      - text: |
-          Dạ [4g](sim)
-      - text: |
-          Gói cước [4G](sim)
+          Dịch vụ [khác](khac)
         metadata:
           canonical: true
       - text: |
-          Hỗ trợ [4g](sim)
+          Hỗ trợ dịch vụ [khác](khac)
       - text: |
-          Hỗ trợ mạng [4g](sim)
-      - text: |
-          Tôi cần hỗ trợ về [4g](sim)
+          Đăng ký dịch vụ [khác](khac)
         metadata:
           canonical: true
       - text: |
-          Tôi cần hỗ trợ về mạng [di động](sim)
-      - text: |
-          Tôi cần hỗ trợ về [sim](sim)
-        metadata:
-          canonical: true
-      - text: |
-          Tôi cần hỗ trợ về truy cập internet [di động](sim)
-      - text: |
-          Tư vấn cho tôi về [4g](sim)
-      - text: |
-          dữ liệu [di động](sim)
-        metadata:
-          canonical: true
-      - text: |
-          hỗ trợ [sim](sim)
-      - text: |
-          hỗ trợ [sim](sim) [4g](sim)
-        metadata:
-          canonical: true
-      - text: |
-          mạng [di động](sim)
-      - text: |
-          [sim](sim)
-      - text: |
-          tôi cần biết về [4g](sim)
-  - intent: hotro.internet.home1
-    metadata:
-      language: vi
-    examples:
-      - text: |
-          Gói [Home 1](home1)
-      - text: |
-          [Home 1](home1)
-      - text: |
-          Tư vấn gói [Home 1](home1)
-        metadata:
-          canonical: true
-      - text: |
-          gói [165k](home1)
-        metadata:
-          canonical: true
-      - text: |
-          gói cước [165000](home1)
-        metadata:
-          canonical: true
-      - text: |
-          [hom1](home1)
-      - text: |
-          home [1](home1)
-      - text: |
-          [home1](home1)
-      - text: |
-          muốn biêt về gói [home1](home1)
-        metadata:
-          canonical: true
-      - text: |
-          muốn hỏi về gói home [1](home1)
-        metadata:
-          canonical: true
-  - intent: hotro.internet.home2
-    metadata:
-      language: vi
-    examples:
-      - text: |
-          Gói Home [2](home2)
-      - text: |
-          Gói [home2](home2)
-        metadata:
-          canonical: true
-      - text: |
-          Home [2](home2)
-        metadata:
-          canonical: true
-      - text: |
-          Tư vấn gói home [2](home2)
-        metadata:
-          canonical: true
-      - text: |
-          [hom2](home2)
-        metadata:
-          canonical: true
-      - text: |
-          home [2](home2)
-  - intent: hotro.internet.home3
-    metadata:
-      language: vi
-    examples:
-      - text: |
-          Home [3](home3)
-        metadata:
-          canonical: true
-      - text: |
-          Tư vấn gói home [3](home3)
-      - text: |
-          gói home [3](home3)
-        metadata:
-          canonical: true
-      - text: |
-          [hom3](home1)
-      - text: |
-          [home3](home3)
+          [khác](khac)
         metadata:
           canonical: true

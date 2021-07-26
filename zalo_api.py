@@ -96,7 +96,6 @@ class Zalo():
                 print("API Connection Error!")
 
     # Kiem tra tin nhan tu tung user xem da tra loi hay chua
-    # def check_reply_status(self, token, user_id):
 
     # Gui tin nhan den user
     def send_text_message(self, token, user_id, message):
@@ -175,7 +174,7 @@ class Zalo():
             print("Connection Error!")
 
 if __name__ == "__main__":
-    token = str("")
+    token = str("dGDnKxTiWacN0d5Rl6g6JPO3Sr-vSSiexabfJgHTq5ZsRcOPWctVRRTVI3YORiTVzsreBBzWssB2K3TviaQ2RTalCWY0Hv5_u7Pd9PHIaaZuI3qraK6EKSemEoAw5ezBbHuwFiS1f7Qd3bnvwGlVCwjkPsZALSepwcjWGA0QsGpG7653dGl69DyMCsFq6i4ctIDgSgWUuIR-TqvGe6EvF-v934kdPxWcx48tOSDRWWAhSYLeXqsTPzvJAngrIDX_mNzoA-jdqM_BUbjuiaNx4lLqULZQMiqWTHXSmIAsSO57")
     zalo = Zalo()
     while True:
         zalo.bot_reply(token)

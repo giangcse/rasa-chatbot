@@ -1,67 +1,47 @@
 version: "2.0"
 
 stories:
-  - story: tu_van_sim
+  - story: tu_van_didong
     steps:
       - intent: basic.chao_hoi
       - action: utter_chao_hoi
-      - intent: hotro.sim
-      - action: utter_hotro_sim
+      - intent: hotro.didong
+      - action: utter_didong
 
-  - story: tu_van_internet
+  - story: tu_van_fibervnn
     steps:
       - intent: basic.chao_hoi
       - action: utter_chao_hoi
-      - intent: hotro.internet
-      - action: utter_hotro_internet
+      - intent: hotro.fibervnn
+      - action: utter_fibervnn
 
-  - story: tu_van_max100
+  - story: tu_van_mytv
     steps:
-      - intent: hotro.sim.max100
-      - action: utter_sim_max100
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.mytv
+      - action: utter_mytv
 
-  - story: tu_van_d30s
+  - story: tu_van_bhxh
     steps:
-      - intent: hotro.sim.d30s
-      - action: utter_sim_d30s
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.bhxh
+      - action: utter_bhxh
 
-  - story: tu_van_d60s
-    steps:
-      - intent: hotro.sim.d60s
-      - action: utter_sim_d60s
-      - intent: basic.ok
-      - action: utter_ok
 
-  - story: tu_van_home1
+  - story: tu_van_chukyso
     steps:
-      - intent: hotro.internet.home1
-      - action: utter_internet_home1
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.chukyso
+      - action: utter_chukyso
 
-  - story: tu_van_home2
+  - story: tu_van_hddt
     steps:
-      - intent: hotro.internet.home2
-      - action: utter_internet_home2
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.hddt
+      - action: utter_hddt
 
-  - story: tu_van_home3
+  - story: tu_van_pharmacy
     steps:
-      - intent: hotro.internet.home3
-      - action: utter_internet_home3
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.pharmacy
+      - action: utter_pharmacy
 
-  - story: chui_nhau
+  - story: tu_van_khac
     steps:
-      - intent: basic.noi_bay
-      - action: utter_chui_nhau_1
-      - intent: basic.chui_nhau
-      - action: utter_chui_nhau_2
-      - intent: basic.ok
-      - action: utter_ok
+      - intent: hotro.khac
+      - action: utter_khac
