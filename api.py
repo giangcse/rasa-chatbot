@@ -1,6 +1,7 @@
 import requests
 import json
 
+from flask import Flask
 
 def send_message(id_sender, message):
     # call api url
