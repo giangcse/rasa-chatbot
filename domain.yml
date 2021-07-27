@@ -75,7 +75,7 @@ responses:
     - text: "Để đăng ký dịch vụ Chữ ký số (VNPT-CA), quý khác vui lòng truy cập vào đường dẫn sau #chukyso"
 
   utter_bhxh:
-    - text: "Đối với dịch vụ BHXH bên em hiện đang có 3 gói cước cơ bản là Home1, Home2, Home3. Quý khách vui lòng chọn gói cước để được tư vấn."
+    - text: "Để đăng ký dịch vụ Bảo hiểm xã hội (VNPT-IVAN), quý khác vui lòng truy cập vào đường dẫn sau #bhxh"
 
   utter_hddt:
     - text: "Để đăng ký dịch vụ Hóa đơn điện tử, quý khác vui lòng truy cập vào đường dẫn sau #hddt"
