@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 # Ham index
 
-
 @app.route('/', methods=['GET'])
 def index():
     user_id = request.form.get('user_id')
@@ -79,8 +78,8 @@ def index():
             else:
                 finally_respone = _respone[0]['text']
 
-            return flask.jsonify({'status': 'success', 'data': finally_respone})
+            return flask.jsonify({'status': 'success', 'message': finally_respone})
         except ConnectionError:
-            return flask.jsonify({'status': 'error', 'data': 'ConnectionError'})
+            return flask.jsonify({'status': 'error', 'message': 'ConnectionError'})
     else:
-        return flask.jsonify({'status': 'error', 'data': 'No user_id'})
+        return flask.jsonify({'status': 'error', 'message': 'No user_id'})

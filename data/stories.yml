@@ -45,3 +45,13 @@ stories:
     steps:
       - intent: hotro.khac
       - action: utter_khac
+
+  - story: cam_on
+    steps:
+      - intent: basic.cam_on
+      - action: utter_cam_on
+
+  - story: ok
+    steps:
+      - intent: basic.ok
+      - action: utter_ok

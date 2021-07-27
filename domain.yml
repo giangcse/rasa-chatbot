@@ -28,7 +28,7 @@ entities:
 
 responses:
   utter_default:
-    - text: "Yêu cầu của quý khách đang được chuyển cho nhân viên hỗ trợ."
+    - text: "Hiện tại bot chat chưa hỗ trợ vấn đề này. Yêu cầu của quý khách đã được chuyển cho nhân viên tư vấn và sẽ liên hệ với quý khách sớm nhất."
 
   utter_chao_hoi:
     - text: "Kính chào quý khách, hiện tại VNPT Vĩnh Long đang cung cấp các dịch vụ sau: Internet (FiberVNN), Mạng di động (Vinaphone), MyTV, BHXH-IVAN (Bảo hiểm xã hội), VNPT-CA (Chữ ký số), Hóa đơn điện tử, Pharmacy (Quản lý nhà thuốc)."
@@ -39,8 +39,8 @@ responses:
   utter_cam_on:
     - text: "Dạ cảm ơn quý khách!"
 
-  # utter_ok:
-  #   - text: "Ok mày luôn!"
+  utter_ok:
+    - text: "Quý khách có cần hỗ trợ gì thêm không ạ?"
 
   utter_ho_tro:
     - text: "Quý khách vui lòng chọn dịch vụ cần hỗ trợ:
@@ -66,25 +66,25 @@ responses:
     - text: "Để đăng ký dịch vụ di động, quý khách vui lòng truy cập vào đường dẫn sau #didong"
 
   utter_mytv:
-    - text: "Để đăng ký dịch vụ MyTV, quý khác vui lòng truy cập vào đường dẫn sau #mytv"
+    - text: "Để đăng ký dịch vụ MyTV, quý khách vui lòng truy cập vào đường dẫn sau #mytv"
 
   utter_fiber:
-    - text: "Để đăng ký dịch vụ Internet (FiberVNN), quý khác vui lòng truy cập vào đường dẫn sau #fiber"
+    - text: "Để đăng ký dịch vụ Internet (FiberVNN), quý khách vui lòng truy cập vào đường dẫn sau #fiber"
 
   utter_chukyso:
-    - text: "Để đăng ký dịch vụ Chữ ký số (VNPT-CA), quý khác vui lòng truy cập vào đường dẫn sau #chukyso"
+    - text: "Để đăng ký dịch vụ Chữ ký số (VNPT-CA), quý khách vui lòng truy cập vào đường dẫn sau #chukyso"
 
   utter_bhxh:
-    - text: "Để đăng ký dịch vụ Bảo hiểm xã hội (VNPT-IVAN), quý khác vui lòng truy cập vào đường dẫn sau #bhxh"
+    - text: "Để đăng ký dịch vụ Bảo hiểm xã hội (VNPT-IVAN), quý khách vui lòng truy cập vào đường dẫn sau #bhxh"
 
   utter_hddt:
-    - text: "Để đăng ký dịch vụ Hóa đơn điện tử, quý khác vui lòng truy cập vào đường dẫn sau #hddt"
+    - text: "Để đăng ký dịch vụ Hóa đơn điện tử, quý khách vui lòng truy cập vào đường dẫn sau #hddt"
 
   utter_pharmacy:
-    - text: "Để đăng ký dịch vụ Quản lý nhà thuốc (Pharmacy), quý khác vui lòng truy cập vào đường dẫn sau #pharmacy"
+    - text: "Để đăng ký dịch vụ Quản lý nhà thuốc (Pharmacy), quý khách vui lòng truy cập vào đường dẫn sau #pharmacy"
 
   utter_khac:
-    - text: "Để đăng ký dịch vụ khác, quý khác vui lòng truy cập vào đường dẫn sau #khac"
+    - text: "Để đăng ký dịch vụ khác, quý khách vui lòng truy cập vào đường dẫn sau #khac"
 
 session_config:
   session_expiration_time: 60
