@@ -8,12 +8,12 @@ stories:
       - intent: hotro.didong
       - action: utter_didong
 
-  - story: tu_van_fibervnn
+  - story: tu_van_fiber
     steps:
       - intent: basic.chao_hoi
       - action: utter_chao_hoi
-      - intent: hotro.fibervnn
-      - action: utter_fibervnn
+      - intent: hotro.fiber
+      - action: utter_fiber
 
   - story: tu_van_mytv
     steps:
