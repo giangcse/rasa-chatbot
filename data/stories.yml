@@ -1,17 +1,22 @@
 version: "2.0"
 
 stories:
-  - story: tu_van_didong
+  - story: chao_hoi
     steps:
       - intent: basic.chao_hoi
       - action: utter_chao_hoi
+
+  - story: tu_van_didong
+    steps:
+      # - intent: basic.chao_hoi
+      # - action: utter_chao_hoi
       - intent: hotro.didong
       - action: utter_didong
 
   - story: tu_van_fiber
     steps:
-      - intent: basic.chao_hoi
-      - action: utter_chao_hoi
+      # - intent: basic.chao_hoi
+      # - action: utter_chao_hoi
       - intent: hotro.fiber
       - action: utter_fiber
 
@@ -40,6 +45,11 @@ stories:
     steps:
       - intent: hotro.pharmacy
       - action: utter_pharmacy
+
+  - story: tiepnhan_hotro
+    steps:
+      - intent: basic.tiepnhan_hotro
+      - action: utter_tiepnhan_hotro
 
   - story: tu_van_khac
     steps:

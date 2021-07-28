@@ -58,6 +58,13 @@ nlu:
       - giúp
       - tìm hiểu
 
+  - intent: basic.tiepnhan_hotro
+    examples: |
+      - #hotro_bhxh
+      - #hotro_chukyso
+      - #hotro_pharmacy
+      - #hotro_hddt
+
   - intent: basic.ok
     examples: |
       - ok

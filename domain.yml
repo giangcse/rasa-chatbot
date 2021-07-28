@@ -6,7 +6,7 @@ intents:
   - basic.cam_on
   - basic.dang_ky
   - basic.ho_tro
-  - basic.didong
+  - basic.tiepnhan_hotro
   - hotro.fiber
   - hotro.mytv
   - hotro.didong
@@ -15,6 +15,9 @@ intents:
   - hotro.hddt
   - hotro.pharmacy
   - hotro.khac
+
+actions:
+  - action_chaohoi
 
 entities:
   - fiber
@@ -44,13 +47,13 @@ responses:
 
   utter_ho_tro:
     - text: "Quý khách vui lòng chọn dịch vụ cần hỗ trợ:
-        - Internet
-        - Vinaphone
-        - MyTV
         - Chữ ký số (VNPT-CA)
         - Bảo hiểm xã hội (BHXH-IVAN)
         - Hóa đơn điện tử
         - Hệ thống quản lý nhà thuốc (VNPT-Pharmacy)"
+
+  utter_tiepnhan_hotro:
+    - text: "Yêu cầu hỗ trợ của quý khách đã được tiếp nhận và chuyển đến nhân viên hỗ trợ."
 
   utter_dang_ky:
     - text: "Quý khách vui lòng chọn dịch vụ cần đăng ký:
@@ -72,19 +75,23 @@ responses:
     - text: "Để đăng ký dịch vụ Internet (FiberVNN), quý khách vui lòng truy cập vào đường dẫn sau #fiber"
 
   utter_chukyso:
-    - text: "Để đăng ký dịch vụ Chữ ký số (VNPT-CA), quý khách vui lòng truy cập vào đường dẫn sau #chukyso"
+    - text: "Để đăng ký dịch vụ Chữ ký số (VNPT-CA), quý khách vui lòng truy cập vào đường dẫn sau #chukyso 
+    Hoặc muốn liên hệ trực tiếp với nhân viên hỗ trợ, quý khách vui lòng nhắn #hotro_chukyso"
 
   utter_bhxh:
-    - text: "Để đăng ký dịch vụ Bảo hiểm xã hội (VNPT-IVAN), quý khách vui lòng truy cập vào đường dẫn sau #bhxh"
+    - text: "Để đăng ký dịch vụ Bảo hiểm xã hội (VNPT-IVAN), quý khách vui lòng truy cập vào đường dẫn sau #bhxh 
+    Hoặc muốn liên hệ trực tiếp với nhân viên hỗ trợ, quý khách vui lòng nhắn #hotro_bhxh"
 
   utter_hddt:
-    - text: "Để đăng ký dịch vụ Hóa đơn điện tử, quý khách vui lòng truy cập vào đường dẫn sau #hddt"
+    - text: "Để đăng ký dịch vụ Hóa đơn điện tử, quý khách vui lòng truy cập vào đường dẫn sau #hddt 
+    Hoặc muốn liên hệ trực tiếp với nhân viên hỗ trợ, quý khách vui lòng nhắn #hotro_hddt"
 
   utter_pharmacy:
-    - text: "Để đăng ký dịch vụ Quản lý nhà thuốc (Pharmacy), quý khách vui lòng truy cập vào đường dẫn sau #pharmacy"
+    - text: "Để đăng ký dịch vụ Quản lý nhà thuốc (Pharmacy), quý khách vui lòng truy cập vào đường dẫn sau #pharmacy 
+    Hoặc muốn liên hệ trực tiếp với nhân viên hỗ trợ, quý khách vui lòng nhắn #hotro_pharmacy"
 
   utter_khac:
-    - text: "Để đăng ký dịch vụ khác, quý khách vui lòng truy cập vào đường dẫn sau #khac"
+    - text: "Để đăng ký dịch vụ khác, quý khách vui lòng truy cập vào đường dẫn sau #khac."
 
 session_config:
   session_expiration_time: 60
