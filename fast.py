@@ -3,6 +3,7 @@ from fastapi import FastAPI, Form
 
 import json
 import requests
+import uvicorn
 
 app = FastAPI()
 
@@ -83,3 +84,6 @@ async def index(user_id: str = Form(...), user_msg: str = Form(...)):
             return json.loads(json.dumps({'status': 'success', 'message': finally_respone}))
         except ConnectionError:
             return json.loads(json.dumps({'status': 'error', 'message': 'ConnectionError'}))
+
+if __name__ == "__main__":
+    uvicorn.run("fast:app", host="0.0.0.0", port=5000, reload=True)
