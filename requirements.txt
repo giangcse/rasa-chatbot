@@ -2,3 +2,7 @@ rasa
 Flask~=2.0.1
 gunicorn
 requests
+uvicorn
+fastapi
+python-multipart
+pydantic
